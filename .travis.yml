@@ -23,8 +23,8 @@ jobs:
         - ./gradlew testMigrate
       script: ./gradlew clean build
       before_deploy:
-        - git config --local user.name "Travis CI"
-        - git config --local user.email "travis@example.com"
+        - git config --local user.name "Andrew Aibinder"
+        - git config --local user.email "andrew.aibinder@kroger.com"
         - git tag -f $RELEASE_TAG
       deploy:
         provider: releases
